@@ -1,0 +1,20 @@
+<template>
+
+    <lightning-card>
+
+        <div class="container slds-box slds-theme_default">
+            <h1 class="slds-text-heading_large slds-align_absolute-center slds-m-around_medium">Leads</h1>
+
+            <template for:each={leads} for:item="lead">
+                <h1 key={lead.id} class="nomeh1 slds-align_absolute-center slds-m-around_x-small ">{lead.primeironome} {lead.sobrenome}</h1>
+                <p key={lead.id}>Idade: {lead.idade}</p>
+                <p key={lead.id}>Email: {lead.email}</p>
+                <p key={lead.id}>Classificação: {lead.classificacao}</p>
+                <p key={lead.id}>Empresa: {lead.empresa}</p>
+                <p key={lead.id}>Receita Anual: R$ {lead.receitaanual}</p>
+            </template>
+        </div>
+
+    </lightning-card>
+
+</template>
